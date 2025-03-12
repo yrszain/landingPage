@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="headerlogo-flex">
+          <img src="./images/headerlogo.png" alt="" />
+          <a href="#" class="logo"> TIKDAT </a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Product Features</a></li>
+          <li><a href="#">Case Studies</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Order</a></li>
+        </ul>
+
+        <!-- Get Started Button (Desktop) -->
+        <a href="#" class="get-started">Get Started</a>
+
+        <!-- Hamburger Menu (Mobile) -->
+        <button class="hamburger" id="menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="mobile-menu" id="mobile-menu">
+        <a href="#">Home</a>
+        <a href="#">Product Features</a>
+        <a href="#">Case Studies</a>
+        <a href="#">Pricing</a>
+        <a href="#">Order</a>
+        <a href="#" class="mobile-get-started">Get Started</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-content">
+        <span class="badge">WELCOME TO TIKDAT</span>
+        <h1>
+          Unlock the Power of <br />
+          Tick-by-Tick Order Book Data
+        </h1>
+        <p>
+          Reliable, accessible, and tailored data from major cryptocurrency
+          exchanges for quantitative traders and researchers.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#" class="btn-primary">Get Your Free Sample Now</a>
+          <a href="#" class="btn-secondary">🎥 Watch Video</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <span class="features-badge">OUR PRODUCT FEATURES</span>
+      <h2>Key Features</h2>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <img src="images/keyfeature1.png" alt="Feature 2" />
+          </div>
+          <div class="feature-content">
+            <h3>High-Quality, Tick-By-Tick Data From Multiple Exchanges.</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
+              eiusmod tempor.
+            </p>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <img src="images/keyfeature2.png" alt="Feature 2" />
+          </div>
+          <div class="feature-content">
+            <h3>High-Quality, Tick-By-Tick Data From Multiple Exchanges.</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
+              eiusmod tempor.
+            </p>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <img src="images/keyfeature3.png" alt="Feature 2" />
+          </div>
+          <div class="feature-content">
+            <h3>High-Quality, Tick-By-Tick Data From Multiple Exchanges.</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
+              eiusmod tempor.
+            </p>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <img src="images/keyfeature4.png" alt="Feature 2" />
+          </div>
+          <div class="feature-content">
+            <h3>High-Quality, Tick-By-Tick Data From Multiple Exchanges.</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
+              eiusmod tempor.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <span class="badge">TESTIMONIALS</span>
+      <h2>What Our Customers Say About Tikdat</h2>
+
+      <div class="testimonial-card">
+        <p class="testimonial-text">
+          "I really like your service, it fits perfectly on my training and
+          backtesting pipeline. Thanks to Tikdat my experiment iteration speed
+          has gone 10x. The support that I received especially due to a crypto
+          exchange issue and having to pause for a little while was accommodated
+          by them."
+        </p>
+        <div class="testimonial-author">
+          <img src="images/testimonials1.png" alt="Nathaneal Down" />
+          <div>
+            <h4>Nathaneal Down</h4>
+            <p>Abc Trader</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-users">
+        <div class="user active">
+          <img src="images/testimonials1.png" alt="Nathaneal Down" />
+          <div>
+            <h4>Nathaneal Down</h4>
+            <p>Abc Trader</p>
+          </div>
+        </div>
+
+        <div class="user">
+          <img src="images/testimonials2.png" alt="Nathaneal Down" />
+          <div>
+            <h4>Bodrum Salvador</h4>
+            <p>Def Trader</p>
+          </div>
+        </div>
+
+        <div class="user">
+          <img src="images/testimonials3.png" alt="Nathaneal Down" />
+          <div>
+            <h4>Mohsin Alikhan</h4>
+            <p>Ghi Trader</p>
+          </div>
+        </div>
+
+        <div class="user">
+          <img src="images/testimonials4.png" alt="Nathaneal Down" />
+          <div>
+            <h4>Parsley Montana</h4>
+            <p>Jki Trader</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing">
+      <span class="badge">PRICING PLAN</span>
+      <h2>Flexible Pricing For Your Needs</h2>
+
+      <div class="toggle">
+        <span>Pay Monthly</span>
+        <input type="checkbox" id="toggle-switch" />
+        <label for="toggle-switch" class="toggle-label"></label>
+        <span>Pay Yearly</span>
+      </div>
+
+      <div class="pricing-cards">
+        <!-- Basic Plan -->
+        <div class="card">
+          <h3>Basic Plan</h3>
+          <p class="price">$<span class="monthly-price">800</span> / month</p>
+          <p class="description">
+            Access To <span class="highlight">Perpetual Swaps</span> Data
+          </p>
+          <ul>
+            <li>✔ 500+ Perpetual Swaps Instruments</li>
+            <li>✔ Downloadable CSV Files</li>
+            <li>✔ Granular Order Book Updates</li>
+            <li>✔ Historical Data (Yearly Plan Only)</li>
+            <li>✔ Real-Time Market Data Streaming</li>
+            <li>✔ Professional Support</li>
+            <li>✔ API Access</li>
+          </ul>
+          <button class="btn">Choose Your Plan</button>
+        </div>
+
+        <!-- Pro Plan -->
+        <div class="card dark">
+          <h3>Pro Plan</h3>
+          <p class="price">$<span class="monthly-price">1200</span> / month</p>
+          <p class="description">
+            Access To <span class="highlight">Derivatives Exchanges</span> Data
+          </p>
+          <ul>
+            <li>✔ BitMEX, Binance, OKX & More</li>
+            <li>✔ Downloadable CSV Files</li>
+            <li>✔ Granular Order Book Updates</li>
+            <li>✔ Historical Data (Yearly Plan Only)</li>
+            <li>✔ Real-Time Market Data Streaming</li>
+            <li>✔ Professional Support</li>
+            <li>✔ API Access</li>
+          </ul>
+          <button class="btn dark-btn">Choose Your Plan</button>
+        </div>
+
+        <!-- Enterprise Plan -->
+
+        <div class="card">
+          <h3>Enterprise Plan</h3>
+          <p class="price">$<span class="monthly-price">1800</span> / month</p>
+          <p class="description">
+            Access To
+            <span class="highlight">Spot & Derivatives Exchanges</span> Data
+          </p>
+          <ul>
+            <li>✔ 30+ Spot & Derivatives Exchanges</li>
+            <li>✔ Downloadable CSV Files</li>
+            <li>✔ Granular Order Book Updates</li>
+            <li>✔ Historical Data (Yearly Plan Only)</li>
+            <li>✔ Real-Time Market Data Streaming</li>
+            <li>✔ Professional Support</li>
+            <li>✔ API Access</li>
+          </ul>
+          <button class="btn">Choose Your Plan</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="order-sec">
+      <div class="wrapper">
+        <div class="section-header">
+          <span class="tag">READY TO GET STARTED?</span>
+          <h2 class="title">
+            Request A Free Sample Or Choose Your Plan Today.
+          </h2>
+        </div>
+
+        <div class="order-container">
+          <h3 class="order-heading">Your Order</h3>
+          <p class="order-info">
+            Not 100% Sure How It Works? <a href="#" class="link">See FAQ.</a>
+          </p>
+
+          <!-- Access Type -->
+          <div class="option-group">
+            <p class="option-title">Access Type</p>
+            <div class="btn-set">
+              <button class="option-btn selected">One-Off Purchase</button>
+              <button class="option-btn">Subscription</button>
+            </div>
+            <p class="note">
+              Access to
+              <a href="#" class="highlight">selected time periods</a> of
+              historical market data
+            </p>
+          </div>
+
+          <!-- Data Plan -->
+          <div class="option-group">
+            <p class="option-title">Data Plan</p>
+            <div class="btn-set">
+              <button class="option-btn">Basic</button>
+              <button class="option-btn">Pro</button>
+              <button class="option-btn selected">Enterprise</button>
+            </div>
+            <p class="note">
+              "Enterprise" data plan —
+              <a href="#" class="highlight"
+                >access to all enterprise exchanges data</a
+              >
+            </p>
+          </div>
+
+          <!-- Time Period -->
+          <div class="option-group">
+            <div class="btn-set">
+              <button class="option-btn">Last 3 Months</button>
+              <button class="option-btn">Year to Date</button>
+              <button class="option-btn">Complete History</button>
+            </div>
+          </div>
+
+          <!-- Date Selection -->
+          <div class="option-group">
+            <label class="option-title">From Date</label>
+            <input type="date" class="input-field" />
+            <p class="note">
+              Historical market data is available since 2019-03-30.
+              <a href="#" class="highlight">See details.</a>
+            </p>
+          </div>
+
+          <div class="option-group">
+            <label class="option-title">To Date</label>
+            <input type="date" class="input-field" />
+          </div>
+
+          <!-- CTA Buttons -->
+          <div class="cta-container">
+            <button class="cta-btn primary">Get Your Free Sample</button>
+            <button class="cta-btn secondary">Choose Your Plan</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-bg">
+      <div class="footer-container">
+        <!-- Left Section (Brand Info) -->
+        <div class="footer-brand">
+          <img
+            src="images/headerlogo.png"
+            alt="TIKDAT Logo"
+            class="footer-logo"
+          />
+          <p class="footer-description">
+            Reliable, accessible, and tailored data from major cryptocurrency
+            exchanges for quantitative traders and researchers.
+          </p>
+          <div class="footer-social">
+            <a href="#" class="footer-icon">🔵</a>
+            <a href="#" class="footer-icon">🐦</a>
+            <a href="#" class="footer-icon">💼</a>
+            <a href="#" class="footer-icon">📸</a>
+          </div>
+        </div>
+
+        <!-- Middle Section (Links) -->
+        <div class="footer-links">
+          <h3 class="footer-title">Links</h3>
+          <ul>
+            <li><a href="#" class="footer-link">About Us</a></li>
+            <li><a href="#" class="footer-link">Contact</a></li>
+            <li><a href="#" class="footer-link">Privacy Policy</a></li>
+            <li><a href="#" class="footer-link">Terms of Service</a></li>
+            <li><a href="#" class="footer-link">Support</a></li>
+          </ul>
+        </div>
+
+        <!-- Right Section (Contact Form) -->
+        <div class="footer-contact">
+          <h3 class="footer-title">Contact Us</h3>
+          <p class="footer-text">
+            Our data team is happy to answer your questions. Just fill out the
+            form.
+          </p>
+          <form class="footer-form">
+            <div class="footer-input-group">
+              <input type="text" class="footer-input" placeholder="Name" />
+              <input type="email" class="footer-input" placeholder="Email" />
+            </div>
+            <textarea class="footer-textarea" placeholder="Message"></textarea>
+            <button type="submit" class="footer-button">Contact Us</button>
+          </form>
+        </div>
+      </div>
+      <p class="footer-copyright">
+        Copyright © 2024 All Rights Reserved by TIKDAT
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
